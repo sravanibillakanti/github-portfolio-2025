@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sravani Billakanti — Portfolio</title>
+  <meta name="description" content="Portfolio of Sravani Billakanti: About, Experience, Skills, Education, Contact." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa3b2; --accent:#06b6d4; --glass: rgba(255,255,255,0.03);
+      --radius:12px; --max-width:1100px; --gap:20px; --fw-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;padding:32px; background:linear-gradient(180deg,var(--bg),#071223 120%); font-family:var(--fw-sans); color:#e6eef6;}
+    .container{max-width:var(--max-width);margin:0 auto;display:grid;grid-template-columns:1fr 340px;gap:var(--gap);align-items:start}
+    header{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+    nav a:hover{color:var(--accent)}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:22px;box-shadow:0 6px 18px rgba(2,6,23,0.6);}
+    .section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+    .timeline{margin:8px 0;padding-left:14px;border-left:2px dashed rgba(255,255,255,0.04)}
+    .job{margin-bottom:18px;position:relative;padding-left:18px}
+    .job::before{content:'';position:absolute;left:-10px;top:6px;width:14px;height:14px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 4px rgba(6,182,212,0.08)}
+    .job h4{margin:0;font-size:16px}
+    .job .meta{color:var(--muted);font-size:13px;margin-top:4px}
+    .job p{margin-top:8px;color:var(--muted);line-height:1.45}
+    .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .skill{background:var(--glass);padding:10px;border-radius:10px}
+    .skill .label{display:flex;justify-content:space-between;font-weight:600;margin-bottom:8px}
+    .bar{height:10px;background:rgba(255,255,255,0.06);border-radius:999px;overflow:hidden}
+    .bar > span{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#7c3aed);border-radius:999px}
+    .info-list{list-style:none;padding:0;margin:0}
+    .info-list li{display:flex;gap:10px;align-items:center;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.02);color:var(--muted)}
+    footer{grid-column:1/-1;text-align:center;color:var(--muted);padding-top:18px;font-size:13px}
+    @media (max-width:980px){.container{grid-template-columns:1fr;padding:0}aside{order:2}.card{padding:18px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="mark">SB</div>
+        <div>
+          <div style="font-weight:700">Sravani Billakanti</div>
+          <div class="muted" style="font-size:13px">Full Stack Developer • Java • React</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="card">
+        <h1>About Me</h1>
+        <p>Full Stack Developer with 8+ years of experience across Financial, Healthcare, E-Commerce, and other domains. Skilled in designing and developing enterprise applications using Java/J2EE technologies, React.js, Angular, and modern DevOps practices. Strong expertise in cloud technologies, microservices, CI/CD pipelines, and database optimization.</p>
+      </section>
+
+      <section id="experience" class="card" style="margin-top:20px">
+        <div class="section-title"><h3>Experience</h3></div>
+        <div class="timeline">
+          <article class="job">
+            <h4>Full Stack Developer — Insulet, Acton, MA</h4>
+            <div class="meta">05/2023 – Present</div>
+            <p>Developed a real-time dashboard for monitoring Omnipod insulin devices with responsive UI, multithreaded backend processing, cloud integration, and CI/CD pipelines.</p>
+          </article>
+          <article class="job">
+            <h4>Full Stack Web Developer — CAT, Mossville, IL</h4>
+            <div class="meta">09/2021 – 05/2023</div>
+            <p>Built responsive fleet monitoring dashboard with React.js and Spring Boot, integrated Apache Kafka for real-time data, deployed services on AWS with CI/CD pipelines.</p>
+          </article>
+          <article class="job">
+            <h4>Java Full Stack Developer — Menards, Eau Claire, WI</h4>
+            <div class="meta">06/2019 – 01/2021</div>
+            <p>Developed e-commerce Order Management System using React.js, Spring Boot, Hibernate, and MySQL. Improved performance, ensured 24/7 uptime, and enhanced customer experience.</p>
+          </article>
+          <article class="job">
+            <h4>Java Developer — AGFA HealthCare, Atlanta, GA</h4>
+            <div class="meta">11/2017 – 05/2018</div>
+            <p>Worked on Radiology Information System (RIS), developed Java modules, REST APIs, optimized SQL queries, ensured HIPAA compliance, and integrated with PACS.</p>
+          </article>
+          <article class="job">
+            <h4>Java/J2EE Developer — Fusion Informatics, Bangalore, India</h4>
+            <div class="meta">05/2015 – 10/2017</div>
+            <p>Developed healthcare claims processing application with Java, Spring, Hibernate, REST APIs, and SQL optimization. Improved claim tracking and automated workflows.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="card" style="margin-top:20px">
+        <div class="section-title"><h3>Skills</h3></div>
+        <div class="skills-grid">
+          <div class="skill"><div class="label"><span>Frontend</span></div><p class="muted">React.js, JavaScript, jQuery, Bootstrap, HTML5, CSS3</p></div>
+          <div class="skill"><div class="label"><span>Backend</span></div><p class="muted">Java, Spring Boot, Microservices, RESTful APIs</p></div>
+          <div class="skill"><div class="label"><span>Databases</span></div><p class="muted">Oracle DB, MySQL, PostgreSQL</p></div>
+          <div class="skill"><div class="label"><span>Messaging/Streaming</span></div><p class="muted">Apache Kafka</p></div>
+          <div class="skill"><div class="label"><span>Cloud/DevOps</span></div><p class="muted">AWS, Jenkins, GitLab, Git, GitHub, Terraform</p></div>
+          <div class="skill"><div class="label"><span>Testing/Monitoring</span></div><p class="muted">JUnit, Mockito, TestNG, Log4j, JMeter, SOAP UI</p></div>
+        </div>
+      </section>
+
+      <section id="education" class="card" style="margin-top:20px">
+        <div class="section-title"><h3>Education</h3></div>
+        <p><strong>Master of Science in Computer Science</strong> — Rivier University, MA — Expected 05/2025</p>
+        <p><strong>Bachelor of Science in Computer Science and Engineering</strong> — CMR Technical Campus, Hyderabad — 04/2021</p>
+      </section>
+
+      <section id="contact" class="card" style="margin-top:20px">
+        <div class="section-title"><h3>Contact</h3></div>
+        <ul class="info-list">
+          <li><strong>Email:</strong><span style="margin-left:auto" class="muted">sravanibillakanti25@gmail.com</span></li>
+          <li><strong>Phone:</strong><span style="margin-left:auto" class="muted">+1 (339) 970-8722</span></li>
+          <li><strong>Location:</strong><span style="margin-left:auto" class="muted">Woburn, MA 01801</span></li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      Built with care • © <span id="year"></span> Sravani Billakanti
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
